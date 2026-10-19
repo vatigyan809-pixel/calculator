@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <header class="header">
+      <div class="logo">✦</div>
+      <h1>Calculator</h1>
+      <p>Simple calculations, made easy</p>
+    </header>
+
+    <section class="display">
+      <div id="previous"></div>
+      <input id="screen" type="text" value="0" readonly aria-label="Calculator display">
+    </section>
+
+    <section class="buttons">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete">DEL</button>
+      <button class="utility" data-action="percent">%</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="-">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-value="+">+</button>
+
+      <button data-action="sign">+/−</button>
+      <button data-value="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="calculate">=</button>
+    </section>
+
+    <footer>Made for everyday calculations</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
